@@ -1,1 +1,1 @@
-module.exports = function (env, argv) {};
+module.exports = {};

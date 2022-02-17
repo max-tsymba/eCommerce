@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig-strict.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["DOM", "DOM.Iterable", "ES6", "ScriptHost"],
+    "outDir": "",
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "build", ".vscode"]
+}
