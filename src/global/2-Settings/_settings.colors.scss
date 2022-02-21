@@ -1,0 +1,76 @@
+/*-- Colors --*/
+$_color-primary: #151515;
+$_color-primary-100: #575757;
+$_color-primary-200: #a9a9a9;
+$_color-primary-300: #d1d1d1;
+$_color-primary-400: #ebebeb;
+$_color-primary-500: #f5f5f5;
+$_color-primary-600: #f9f9f9;
+
+$_color-secondary: #6a983c;
+$_color-secondary-100: #46760a;
+$_color-secondary-200: #92c064;
+$_color-secondary-300: #c8deb3;
+$_color-secondary-400: #f4f8ec;
+
+$_color-brown: #d0a866;
+$_color-brown-100: #b28a48;
+$_color-brown-200: #ecd2a6;
+$_color-brown-300: #faedd8;
+$_color-brown-400: #fff9f0;
+
+$_color-red: #e5704b;
+$_color-red-100: #c7522d;
+$_color-red-200: #eb8d70;
+$_color-red-300: #f7c6b7;
+$_color-red-400: #fff1ed;
+
+$_color-blue: #37d0d6;
+$_color-blue-100: #19b2b8;
+$_color-blue-200: #7cd0d3;
+$_color-blue-300: #b9e6e8;
+$_color-blue-400: #ecf6f6;
+
+/**
+ *  Organize color variables in a Sass Map.
+ *  This way, the colors can be iterated, are more organized, and are more intuitive to reference.
+ */
+$palettes: (
+  primary: (
+    base: $_color-primary,
+    100: $_color-primary-100,
+    200: $_color-primary-200,
+    300: $_color-primary-300,
+    400: $_color-primary-400,
+    500: $_color-primary-500,
+    600: $_color-primary-600,
+  ),
+  secondary: (
+    base: $_color-secondary,
+    100: $_color-secondary-100,
+    200: $_color-secondary-200,
+    300: $_color-secondary-300,
+    400: $_color-secondary-400,
+  ),
+  brown: (
+    base: $_color-brown,
+    100: $_color-brown-100,
+    200: $_color-brown-200,
+    300: $_color-brown-300,
+    400: $_color-brown-400,
+  ),
+  red: (
+    base: $_color-red,
+    100: $_color-red-100,
+    200: $_color-red-200,
+    300: $_color-red-300,
+    400: $_color-red-400,
+  ),
+  blue: (
+    base: $_color-blue,
+    100: $_color-blue-100,
+    200: $_color-blue-200,
+    300: $_color-blue-300,
+    400: $_color-blue-400,
+  ),
+);

@@ -1,3 +1,6 @@
+/**
+ *  Organize titles variables in a Sass Map.
+ */
 $headings: (
   h1: (
     font-weight: 600,
@@ -37,6 +40,9 @@ $headings: (
   ),
 );
 
+/**
+ *  Organize buttons variables in a Sass Map.
+ */
 $buttons: (
   button: (
     font-weight: 700,

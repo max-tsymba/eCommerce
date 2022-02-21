@@ -1,0 +1,8 @@
+/* - Palette Function - */
+@function palette($key, $level: 'base') {
+  @if map-has-key($palettes, $key) {
+    @if map-has-key(map-get($palettes, $key), $level) {
+      @return map-get(map-get($palettes, $key), $level);
+    }
+  }
+}
