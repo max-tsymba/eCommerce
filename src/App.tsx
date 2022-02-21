@@ -1,5 +1,9 @@
 function App(): JSX.Element {
-  return <div>App</div>;
+  return (
+    <div>
+      <button type="button">app</button>
+    </div>
+  );
 }
 
 export default App;

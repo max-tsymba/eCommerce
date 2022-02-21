@@ -1,0 +1,11 @@
+@import 'normalize.css/normalize.css';
+@import 'global/1-Fonts/fonts';
+@import 'global/2-Settings/settings';
+@import 'global/3-Elements/elements';
+
+body {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+}

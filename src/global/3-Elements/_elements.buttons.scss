@@ -1,0 +1,8 @@
+@each $key, $value in $buttons {
+  #{$key} {
+    font-weight: map-get($value, font-weight);
+    font-size: map-get($value, font-size);
+    line-height: map-get($value, line-height);
+    font-family: map-get($value, font-family);
+  }
+}

@@ -52,6 +52,7 @@
     "husky": "4",
     "lint-staged": "^12.3.4",
     "node-sass": "6.0",
+    "normalize-scss": "^7.0.1",
     "prettier": "^2.5.1",
     "prettier-eslint": "^13.0.0",
     "react-refresh": "^0.11.0",
@@ -67,6 +68,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "normalize.css": "^8.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
