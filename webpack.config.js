@@ -1,10 +1,11 @@
+/* eslint-disable import/no-dynamic-require */
+/* eslint-disable @typescript-eslint/no-var-requires */
 const { merge } = require('webpack-merge');
-const commonConfig = require('./webpack.common.js');
+const commonConfig = require('./webpack.common');
 
 module.exports = (envVar) => {
   const { env } = envVar;
   const envConfig = require(`./webpack.${env}.js`);
-  const config = merge(commonConfig, envConfig);
 
-  return config;
+  return merge(commonConfig, envConfig);
 };

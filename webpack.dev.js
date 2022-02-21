@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 module.exports = {
