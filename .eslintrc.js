@@ -39,6 +39,14 @@ module.exports = {
         ignoreRestArgs: false,
       },
     ],
+    'react/function-component-definition': [
+      'error',
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function',
+      },
+    ],
+    'arrow-body-style': ['error', 'always'],
     'react/jsx-filename-extension': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
     'import/no-extraneous-dependencies': 0,
