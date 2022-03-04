@@ -7,3 +7,5 @@ export const CHECKOUT = '/checkout';
 
 export const BLOGS = '/blogs';
 export const BLOG = '/blogs:id';
+
+export const NOT_FOUND = '/404';
