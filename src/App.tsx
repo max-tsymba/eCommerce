@@ -5,16 +5,16 @@ import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router';
 import { HOME, NOT_FOUND } from 'routes/router';
 
-const Home = lazy(() => import('pages/Home'));
-const NotFound = lazy(() => import('pages/NotFound'));
+const Homepage = lazy(() => import('pages/Homepage'));
+const NotFoundPage = lazy(() => import('pages/NotFoundPage'));
 
 const App: React.FunctionComponent = (): JSX.Element => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
         <Route element={<MainLayout />}>
-          <Route path={HOME} element={<Home />} />
-          <Route path={NOT_FOUND} element={<NotFound />} />
+          <Route path={HOME} element={<Homepage />} />
+          <Route path={NOT_FOUND} element={<NotFoundPage />} />
 
           <Route element={<PrivateRoute />}>
             <Route path="/test" element={<div>Test</div>} />
