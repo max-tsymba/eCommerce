@@ -1,3 +1,4 @@
+import Footer from 'components/footer';
 import Header from 'components/header';
 import Container from 'containers/Container';
 import React from 'react';
@@ -15,6 +16,7 @@ const MainLayout: React.FunctionComponent = (): JSX.Element => {
           <Outlet />
         </Container>
       </main>
+      <Footer>Footer</Footer>
     </>
   );
 };
