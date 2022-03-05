@@ -1,3 +1,4 @@
+import Banner from 'components/banner';
 import Button from 'components/button';
 import React from 'react';
 import styles from './styles.module.scss';
@@ -45,6 +46,8 @@ const ComponentsPage: React.FunctionComponent = (): JSX.Element => {
       <Button type="button" variant="simple" size="sm">
         Button
       </Button>
+
+      <Banner />
     </div>
   );
 };

@@ -1,0 +1,12 @@
+@import 'global/toolKit';
+
+.heading {
+  margin: 0;
+  &-primary {
+    color: palette(primary);
+  }
+
+  &-secondary {
+    color: palette(secondary);
+  }
+}
