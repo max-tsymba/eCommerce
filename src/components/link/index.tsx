@@ -18,19 +18,20 @@ const ELink: React.FunctionComponent<ILinkProps> = ({
   variant,
   className,
   target,
+  ...props
 }): JSX.Element => {
   const classes: string = classNames([styles[`${variant}`], className]);
 
   if (as === 'a') {
     return (
-      <a className={classes} href={href} target={target}>
+      <a {...props} className={classes} href={href} target={target}>
         {children}
       </a>
     );
   }
 
   return (
-    <Link className={classes} to={href}>
+    <Link {...props} className={classes} to={href}>
       {children}
     </Link>
   );
@@ -39,3 +40,4 @@ const ELink: React.FunctionComponent<ILinkProps> = ({
 ELink.defaultProps = defaultProps;
 
 export default ELink;
+export type ELinkType = { Link: typeof ELink };

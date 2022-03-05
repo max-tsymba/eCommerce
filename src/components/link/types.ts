@@ -12,4 +12,5 @@ export interface ILinkProps
   variant?: TLinkVariant;
   className?: string;
   target?: TLinkTarget;
+  [x: string]: unknown;
 }

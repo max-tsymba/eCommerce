@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  padding: 16px 0;
+  border-bottom: 1px rgba(#151515, 0.05) solid;
+  justify-content: space-between;
+}
+
+.group {
+  margin: 0 -16px;
+}
+.group > * {
+  margin: 0px 16px;
+}

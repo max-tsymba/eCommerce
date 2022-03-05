@@ -1,4 +1,5 @@
 import Header from 'components/header';
+import TopHeader from 'components/topHeader';
 import Container from 'containers/Container';
 import React from 'react';
 import { Outlet } from 'react-router-dom';
@@ -6,7 +7,9 @@ import { Outlet } from 'react-router-dom';
 const MainLayout: React.FunctionComponent = (): JSX.Element => {
   return (
     <>
-      <Header>Header</Header>
+      <Header>
+        <TopHeader />
+      </Header>
       <main>
         <Container>
           <Outlet />
