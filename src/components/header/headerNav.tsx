@@ -1,7 +1,8 @@
 import Nav from 'components/nav';
 import React from 'react';
+import { ABOUT, BLOGS, CAREERS } from 'routes/router';
 
-const TopHeader: React.FunctionComponent = (): JSX.Element => {
+const HeaderNav: React.FunctionComponent = (): JSX.Element => {
   return (
     <Nav>
       <Nav.Group>
@@ -19,15 +20,15 @@ const TopHeader: React.FunctionComponent = (): JSX.Element => {
       </Nav.Group>
 
       <Nav.Group>
-        <Nav.Link as="link" href="/blog">
+        <Nav.Link as="link" href={BLOGS}>
           Blog
         </Nav.Link>
 
-        <Nav.Link as="link" href="/about">
+        <Nav.Link as="link" href={ABOUT}>
           About Us
         </Nav.Link>
 
-        <Nav.Link as="link" href="/careers">
+        <Nav.Link as="link" href={CAREERS}>
           Careers
         </Nav.Link>
       </Nav.Group>
@@ -35,4 +36,5 @@ const TopHeader: React.FunctionComponent = (): JSX.Element => {
   );
 };
 
-export default TopHeader;
+export default HeaderNav;
+export type HeaderNavType = { Navigation: typeof HeaderNav };
