@@ -54,6 +54,7 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 'error',
     '@typescript-eslint/no-empty-interface': 2,
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'react/default-props-match-prop-types': 0,
     'require-await': 'error',
     'prettier/prettier': ['error'],
     'react/destructuring-assignment': 0,

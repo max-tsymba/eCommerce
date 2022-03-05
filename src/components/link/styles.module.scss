@@ -1,0 +1,14 @@
+@import 'global/toolKit';
+
+.primary {
+  color: palette(primary);
+}
+
+.secondary {
+  color: palette(secondary);
+}
+
+.underline {
+  color: palette(secondary);
+  text-decoration: underline;
+}

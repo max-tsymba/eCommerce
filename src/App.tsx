@@ -1,6 +1,7 @@
 import PrivateRoute from 'components/privateRoute';
 import Redirect from 'components/redirect';
 import MainLayout from 'containers/Layouts/MainLayout';
+import ComponentsPage from 'pages/Test';
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router';
 import { HOME, NOT_FOUND } from 'routes/router';
@@ -14,6 +15,7 @@ const App: React.FunctionComponent = (): JSX.Element => {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path={HOME} element={<Homepage />} />
+          <Route path="/components" element={<ComponentsPage />} />
           <Route path={NOT_FOUND} element={<NotFoundPage />} />
 
           <Route element={<PrivateRoute />}>
