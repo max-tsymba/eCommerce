@@ -1,0 +1,109 @@
+@import 'global/toolKit';
+
+.btn {
+  background-color: transparent;
+  border: none;
+  outline-width: 0;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: 0.4s all;
+}
+
+.chevron {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.2;
+  font-family: 'Poppins';
+
+  &__span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  svg {
+    margin: 0 10px;
+    transition: 0.4s all;
+  }
+}
+
+/* sizes */
+.btn {
+  &-lg {
+    min-width: 148px;
+    padding: 16px 5px;
+  }
+
+  &-md {
+    min-width: 84px;
+    padding: 12px 5px;
+  }
+
+  &-sm {
+    min-width: 76px;
+    padding: 7px 5px;
+  }
+}
+
+/* variant */
+.btn {
+  &-stroke {
+    border: 2px palette(secondary) solid;
+    color: palette(primary);
+
+    svg {
+      color: palette(secondary);
+    }
+
+    &:hover {
+      border-color: palette(secondary, 200);
+
+      svg {
+        color: palette(secondary, 200);
+      }
+    }
+  }
+
+  &-colored {
+    border: 2px palette(secondary, 100) solid;
+    background-color: palette(secondary);
+    color: palette(primary, 600);
+
+    svg {
+      color: palette(primary, 600);
+    }
+
+    &:hover {
+      background-color: palette(secondary, 200);
+    }
+  }
+
+  &-bright {
+    color: palette(primary);
+    background-color: palette(primary, 500);
+    border: 2px transparent solid;
+
+    svg {
+      color: palette(primary);
+    }
+
+    &:hover {
+      background-color: #fff;
+      border: 2px palette(primary, 300) solid;
+    }
+  }
+
+  &-simple {
+    color: palette(primary);
+    background-color: #fff;
+    border: 2px transparent solid;
+
+    svg {
+      color: palette(secondary);
+    }
+
+    &:hover {
+      border: 2px palette(primary, 300) solid;
+    }
+  }
+}

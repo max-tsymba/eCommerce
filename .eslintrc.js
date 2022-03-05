@@ -63,6 +63,7 @@ module.exports = {
     'no-shadow': 0,
     'consistent-return': 0,
     'no-param-reassign': 0,
+    'react/button-has-type': 0,
     'import/prefer-default-export': 0,
     'no-return-assign': 0,
     'react/prop-types': 0,

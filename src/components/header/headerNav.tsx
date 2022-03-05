@@ -31,6 +31,10 @@ const HeaderNav: React.FunctionComponent = (): JSX.Element => {
         <Nav.Link as="link" href={CAREERS}>
           Careers
         </Nav.Link>
+
+        <Nav.Link as="link" href="/components">
+          Components
+        </Nav.Link>
       </Nav.Group>
     </Nav>
   );
