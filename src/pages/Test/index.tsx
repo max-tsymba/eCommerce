@@ -49,6 +49,7 @@ const ComponentsPage: React.FunctionComponent = (): JSX.Element => {
 
       <Banner />
       <Banner />
+      <Banner />
     </div>
   );
 };
